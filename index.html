@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메뉴</title>
+</head>
+<body style="margin: 0px;">
+    <center>
+        <div id="img" style="filter: brightness(50%);width: 100%; height: 50vh;background-position: center center;background-size: 100vw;"></div>
+    </center>
+    <style>
+        h1 {
+            color: black;
+            font-family: 'Jua', sans-serif;
+        }
+        img {
+            width: 2.5vw;
+            height: 2.5vw;
+        }
+        button {
+            margin-top: 0px;
+            padding: 2vw;
+            background-color: white;
+            border-radius: 2vw;
+            border: 0.1vw solid;
+            border-color: black;
+            font-family: 'Jua', sans-serif;
+            width: 10vw;
+            font-size: 1.5vw;
+            height: 10vw;
+        }
+        img {
+            width: 5vw;
+            height: auto;
+        }
+        body {
+            background-color: #EEE;
+        }
+        .mybtn:hover {
+            transform: translateX(200px);
+        }
+    </style>
+    <center>
+        <h1>자주가는 곳</h1>
+        </center>
+        <center>
+        <button onclick="location.href='https://www.youtube.com'"><img src="img/youtube.png"><!--<br>유튜브--></button>
+        <button onclick="location.href='https://www.naver.com'"><img src="img/naver.jpg"><!--<br>네이버--></button>
+        <button onclick="location.href='https://www.google.com'"><img src="img/google.png"><br><!--구글--></button>
+        <button onclick="location.href='https://playentry.org'"><img src="img/entry.png"><br><!--엔트리--></button>
+        <button onclick="location.href='https://scrach.mit.edu'"><img src="img/scratch.png"><br><!--스크래치--></button>
+        <button onclick="location.href='https://canva.com'"><img src="img/canva.jpg"><br><!--캔바--></button>
+    </center>
+    <center>
+        <h1>본인 제작</h1>
+        </center>
+        <center>
+        <button onclick="location.href='https://nomostudy.netlify.app'"><img src="img/nomoNlogo.png" style="width: 4.27vw;"></button>
+        <button onclick="location.href='https://avoid.netlify.app'"><img src="img/avoidICON.ico"></button>
+        <button onclick="location.href='https://lunch-menu.netlify.app'"><img src="img/lunch.ico"></button>
+        <button onclick="location.href='https://number-binary.netlify.app'"><img src="img/10-2.ico"></button>
+        <button onclick="location.href='https://light-3.netlify.app'"><img src="img/light.png"></button>
+        <button onclick="location.href='https://alien-school-stage-game.netlify.app'"><img src="img/stage_site.png"></button>
+    </center>
+    <script>
+        function backgroundimg() {
+            var num = Math.floor(Math.random() * 11);
+            var img = document.getElementById('img').style;
+            img.backgroundImage = "url('img/background" + num + ".jpg')";
+        }
+        backgroundimg();
+    </script>
+</body>
+</html>
